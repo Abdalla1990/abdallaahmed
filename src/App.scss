@@ -1,0 +1,11 @@
+@import 'bootstrap-scss/bootstrap.scss';
+@import 'bootstrap-scss/mixins/_breakpoints.scss';
+@import 'bootstrap-scss/_variables.scss';
+@import './custom-variables.scss';
+@import './components/components.scss';
+@import './classes.scss';
+
+body {
+	font-family: 'Michroma', sans-serif;
+	background-color: $background-color;
+}

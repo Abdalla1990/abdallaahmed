@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Petit+Formal+Script&family=Playball&family=Tulpen+One&display=swap');
+
+.header {
+	display: flex;
+	justify-content: center;
+}
+.logo {
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	color: $header-font-color;
+	font-style: normal;
+	font-weight: 500;
+	height: 100%;
+	@include media-breakpoint-down(md) {
+		color: $white;
+		margin-bottom: -36px;
+	}
+	h1 {
+		margin: auto;
+		min-width: 60px;
+		font-family: 'Tulpen One', cursive;
+		font-size: 60px;
+	}
+}
+.main-header {
+	background-color: $header-background-color;
+	width: 100%;
+	z-index: 999;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 40px 0 0;
+	transition: all 3s;
+
+	.black {
+		background-color: black;
+		color: $white;
+		text-align: center;
+		font-size: 12px;
+		padding: 5px 0;
+		margin-bottom: 15px;
+		z-index: 10000000;
+		span {
+			padding: 0 17px;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		.header-container {
+			background-color: $white;
+			z-index: 1;
+		}
+	}
+}
+
+.header-container {
+	padding: 0;
+	display: flex;
+	width: 39%;
+	@include media-breakpoint-down(md) {
+		width: 70%;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+	}
+	margin: auto;
+	li {
+		display: inline;
+		margin: auto;
+		z-index: 1;
+
+		span > a {
+			color: $header-font-color !important;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			letter-spacing: 5px;
+			padding: 0 13px;
+			@include media-breakpoint-down(sm) {
+				font-size: 13px;
+				letter-spacing: 3px;
+				padding: 0 9px;
+				margin: auto;
+			}
+			opacity: 1;
+			&:hover {
+				opacity: 0.8;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+header {
+	height: $header-container-height;
+}
+
+nav {
+	height: 100%;
+}

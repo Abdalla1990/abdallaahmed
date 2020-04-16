@@ -1,0 +1,12 @@
+.component-container {
+	// height: $main-component-container-height;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.section {
+	min-height: $min-section-height;
+}
