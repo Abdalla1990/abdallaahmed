@@ -1,6 +1,7 @@
 import React from 'react';
 import TrustedBy from './TrustedBy';
 import Footer from './Footer';
+
 export const HomePage = () => (
 	<>
 		<div className='hero-banner-container'>
@@ -21,11 +22,10 @@ export const HomePage = () => (
 			<div className='text-container'>
 				<p>
 					Hi, I am Abdalla, a remote <strong>independant engineer</strong>{' '}
-					helping businesses build a better{' '}
+					helping businesses build a better
 					<strong>E-commerce experiance</strong> By leveraging awesome tools
 					which are built to help scale and boost businesses'
-					<strong>online presens.</strong> <underline>Learn More</underline> or{' '}
-					<underline>Hire Me</underline>
+					<strong>online presens.</strong>
 				</p>
 			</div>
 		</div>
