@@ -9,9 +9,7 @@ const Footer = () => {
 					<h2 className='form-label'>Lets Get In Touch</h2>
 					<span className='form-description'>
 						<p>
-							Have a question ? Need a quick consultancy ? or want to learn more
-							? leave me your contact details and i'll reach out to you in 2-3
-							business days.
+							Have a question, Need a quick consultancy, or want to learn more ?
 						</p>
 					</span>
 

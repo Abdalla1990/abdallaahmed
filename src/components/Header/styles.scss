@@ -4,6 +4,12 @@
 	display: flex;
 	justify-content: center;
 }
+.black-logo {
+	h1 {
+		transition: all 600ms ease-in-out;
+		color: $black !important;
+	}
+}
 .logo {
 	z-index: 100;
 	display: flex;
@@ -13,19 +19,21 @@
 	font-style: normal;
 	font-weight: 500;
 	height: 100%;
-	@include media-breakpoint-down(md) {
-		margin-bottom: -36px;
-		h1 {
-			background-color: rgba(255, 255, 255, 0.199);
-			width: 100%;
-			text-align: center;
-		}
-	}
 	h1 {
+		transition: all 600ms ease-in-out;
 		margin: auto;
 		min-width: 60px;
 		font-family: 'Tulpen One', cursive;
 		font-size: 60px;
+	}
+	@include media-breakpoint-down(md) {
+		margin-bottom: -36px;
+		h1 {
+			color: $white;
+			background-color: rgba(255, 255, 255, 0.199);
+			width: 100%;
+			text-align: center;
+		}
 	}
 }
 .main-header {
@@ -35,10 +43,17 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 0 40px 0 0;
+
 	transition: all 3s;
+	margin-top: 30px;
+	@include media-breakpoint-down(md) {
+		margin-top: 25px;
+	}
 
 	.black {
+		position: fixed;
+		top: 0;
+		width: 100%;
 		background-color: black;
 		color: $white;
 		text-align: center;
