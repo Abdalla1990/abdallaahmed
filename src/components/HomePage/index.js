@@ -1,7 +1,6 @@
 import React from 'react';
 import TrustedBy from './TrustedBy';
 import EcommIntegration from './EcommIntegration';
-import Footer from './Footer';
 
 export const HomePage = () => (
 	<>
@@ -33,6 +32,5 @@ export const HomePage = () => (
 
 		<TrustedBy />
 		<EcommIntegration />
-		<Footer />
 	</>
 );

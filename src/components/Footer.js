@@ -1,7 +1,7 @@
 import React from 'react';
-import MyForm from '../MyForm';
+import MyForm from './MyForm';
 
-const Footer = () => {
+export const Footer = () => {
 	return (
 		<>
 			<div className='footer'>
@@ -22,5 +22,3 @@ const Footer = () => {
 		</>
 	);
 };
-
-export default Footer;
