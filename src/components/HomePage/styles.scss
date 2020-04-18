@@ -112,7 +112,7 @@
 	}
 	p {
 		font-size: calc(0.7em + 0.5vw);
-		letter-spacing: 2px;
+		// letter-spacing: 2px;
 		line-height: 1.7;
 		text-align: justify;
 	}
@@ -123,15 +123,15 @@
 		}
 		padding: 0 20px 20px 20px;
 		.text-container {
-			width: 96%;
-			max-width: 317px;
+			// width: 96%;
+			// max-width: 317px;
 			.btn {
 				width: 100%;
 			}
 		}
 		p {
-			letter-spacing: 1.7px;
-			text-align: left;
+			// letter-spacing: 1.7px;
+			// text-align: justify;
 		}
 	}
 }
@@ -228,10 +228,13 @@
 		}
 		.form-description {
 			text-align: center;
-			font-size: calc(0.5em + 0.4vw);
-
+			font-size: calc(0.7em + 0.5vw);
+			width: 60%;
+			@include media-breakpoint-down(sm) {
+				width: 55%;
+			}
 			p {
-				letter-spacing: 2px;
+				// letter-spacing: 2px;
 				line-height: 1.7;
 				margin: auto;
 			}
@@ -321,7 +324,7 @@
 			padding: 0;
 
 			> a > * {
-				width: calc(3.2em + 0.5vw);
+				width: calc(3.5em + 0.5vw);
 			}
 		}
 	}

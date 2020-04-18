@@ -3,11 +3,13 @@
 .header {
 	display: flex;
 	justify-content: center;
+	z-index: 101;
 }
 .black-logo {
 	h1 {
 		transition: all 600ms ease-in-out;
 		color: $black !important;
+		background-color: #06264d1c !important;
 	}
 }
 .logo {
@@ -27,10 +29,10 @@
 		font-size: 60px;
 	}
 	@include media-breakpoint-down(md) {
-		margin-bottom: -36px;
+		margin-bottom: -71px;
 		h1 {
 			color: $white;
-			background-color: rgba(255, 255, 255, 0.199);
+			background-color: #06264d6b;
 			width: 100%;
 			text-align: center;
 		}

@@ -10,11 +10,7 @@ const EcommerceIntegration = () => {
 	return (
 		<>
 			<h2 className='label'>Ecommerce Integration</h2>
-
 			<div className='text-wrapper no-padding'>
-				<h3 className='label not-title'>
-					I use <strong>top technologies </strong> to produce awesome results
-				</h3>
 				<div className='text-container'>
 					<div className='black'>
 						<a href='https://www.shopify.com'>
@@ -32,6 +28,10 @@ const EcommerceIntegration = () => {
 					<div className='text-wrapper no-padding'>
 						<div className='text-container'>
 							<p>
+								Gain the previlage to <strong>grow & scale</strong> your
+								business faster, by using the <strong>right tools</strong> to
+								build a <strong>shiny & neat</strong> online store, so that you
+								can focus on what matters the most, <strong>Sales ;)</strong>{' '}
 								Gain the previlage to <strong>grow & scale</strong> your
 								business faster, by using the <strong>right tools</strong> to
 								build a <strong>shiny & neat</strong> online store, so that you
