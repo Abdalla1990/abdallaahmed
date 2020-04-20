@@ -1,6 +1,7 @@
 import React from 'react';
 import TrustedBy from './TrustedBy';
 import EcommIntegration from './EcommIntegration';
+import StaticSites from './StaticSites';
 import RenderHelemt from '../RenderHelmet';
 
 export const HomePage = () => (
@@ -33,6 +34,7 @@ export const HomePage = () => (
 		</div>
 
 		<TrustedBy />
+		<StaticSites />
 		<EcommIntegration />
 	</>
 );

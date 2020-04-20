@@ -37,7 +37,7 @@ export const EcoommerceOptions = () => {
 							mix of unique yet powerful components that formes an
 							easy-to-integrate ecommerce framework which extends already
 							existing technologies to benefit from their awesome work and
-							eliminate any technical requirement needed to make yuse of it.
+							eliminate any technical requirement needed to make use of it.
 						</p>
 					</div>
 					<div className='text-container'>

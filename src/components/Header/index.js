@@ -33,6 +33,11 @@ export const Header = () => {
 							<Link to='/ecommerce-options'>ECOMMERCE</Link>
 						</span>
 					</li>
+					<li>
+						<span>
+							<Link to='/web-development'>WEB DESIGN</Link>
+						</span>
+					</li>
 				</ul>
 			</nav>
 		</header>

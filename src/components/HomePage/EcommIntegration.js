@@ -31,10 +31,6 @@ const EcommerceIntegration = () => {
 								Gain the previlage to <strong>grow & scale</strong> your
 								business faster, by using the <strong>right tools</strong> to
 								build a <strong>shiny & neat</strong> online store, so that you
-								can focus on what matters the most, <strong>Sales ;)</strong>{' '}
-								Gain the previlage to <strong>grow & scale</strong> your
-								business faster, by using the <strong>right tools</strong> to
-								build a <strong>shiny & neat</strong> online store, so that you
 								can focus on what matters the most, <strong>Sales ;)</strong>
 							</p>
 						</div>

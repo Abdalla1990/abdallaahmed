@@ -1,12 +1,21 @@
 import React from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Header, HomePage, EcoommerceOptions, Footer } from './components';
+import {
+	Header,
+	HomePage,
+	EcoommerceOptions,
+	Footer,
+	WebDevelopemnt
+} from './components';
 function App() {
 	return (
 		<Router>
 			<Header />
 			<Switch>
+				<Route path='/web-development'>
+					<WebDevelopemnt />
+				</Route>
 				<Route path='/ecommerce-options'>
 					<EcoommerceOptions />
 				</Route>

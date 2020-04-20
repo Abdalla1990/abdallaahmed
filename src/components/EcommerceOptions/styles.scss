@@ -1,0 +1,16 @@
+.ecommerce-options {
+	background-color: $white;
+	overflow-y: scroll;
+	.monolithic {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url('./Monolith-vs-Microservices.png');
+		min-height: 521px;
+		width: 100%;
+		@include media-breakpoint-down(sm) {
+			min-height: 209px;
+			margin-top: -3vh;
+		}
+	}
+}

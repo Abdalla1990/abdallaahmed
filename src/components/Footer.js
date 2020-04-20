@@ -14,6 +14,7 @@ export const Footer = () => {
 					</span>
 					<MyForm />
 				</div>
+				<div>Contact Information</div>
 			</div>
 			<div className='white-fotter'>
 				<p>© COPYRIGHT 2020 | Abdalla Ahmed | All Right Reserved</p>
