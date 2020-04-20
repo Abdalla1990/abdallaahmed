@@ -12,7 +12,6 @@ export const Footer = () => {
 							Have a question, Need a quick consultancy, or want to learn more ?
 						</p>
 					</span>
-
 					<MyForm />
 				</div>
 			</div>

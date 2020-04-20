@@ -12,9 +12,7 @@ async function validateField(type, instance) {
 	}
 
 	return instance.debounce(async () => {
-		console.log('checking name');
 		await new Promise(resolve => setTimeout(resolve, 1000));
-		// All names are valid, so return a false error
 		return false;
 	}, 500);
 }
@@ -44,17 +42,13 @@ function Field({ className, type, required = true }) {
 }
 
 const MyForm = function() {
-	// Use the useForm hook to create a form instance
 	const [status, setStatus] = useState(false);
 	const {
 		Form,
 		meta: { isSubmitting, canSubmit }
 	} = useForm({
 		onSubmit: async (values, instance) => {
-			// onSubmit (and everything else in React Form)
-			// has async support out-of-the-box
 			await sendToFakeServer(values).then(res => {
-				console.log({ res });
 				res === 'Done' && setStatus(true);
 			});
 		},

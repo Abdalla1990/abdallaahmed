@@ -24,7 +24,7 @@ export const HomePage = () => (
 					Hi, I am Abdalla, a remote <strong>independant engineer</strong>{' '}
 					helping businesses build a better{' '}
 					<strong>Ecommerce experiance</strong> By leveraging awesome tools
-					which are built to help scale and boost businesses'
+					which are built to help scale and boost businesses'{' '}
 					<strong>online presence.</strong>
 				</p>
 			</div>

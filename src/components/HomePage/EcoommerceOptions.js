@@ -2,7 +2,7 @@ import React from 'react';
 export const EcoommerceOptions = () => {
 	return (
 		<div className='ecommerce-options'>
-			<h2 className='label'>You Best Ecommerce Option</h2>
+			<h2 className='label title'>You Best Ecommerce Option</h2>
 			<div className='container'>
 				<div className='text-wrapper no-padding'>
 					<div className='text-container'>
