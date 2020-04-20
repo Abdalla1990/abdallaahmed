@@ -6,6 +6,7 @@ const StaticSites = () => {
 			<h2 className='label'>Website Design & Development</h2>
 			<div className='text-wrapper no-padding'>
 				<div className='text-container'>
+					<div className='image-container skitch'></div>
 					<div className='black'>
 						<a href='https://www.codewall.co.uk/html-css-and-javascript-explained-for-beginners/'>
 							<div className='image-container ecomm-brands html'></div>
@@ -32,7 +33,7 @@ const StaticSites = () => {
 						</div>
 					</div>
 					<Link className='btn btn-primary' to='/web-development'>
-						Know More
+						Learn More
 					</Link>
 				</div>
 			</div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import RenderHelemt from '../RenderHelmet';
+import { HashLink as Hash } from 'react-router-hash-link';
 
 export const EcoommerceOptions = () => {
 	return (
@@ -67,6 +68,9 @@ export const EcoommerceOptions = () => {
 							*Note : we can adjust this stack to whatever works best for your
 							business.
 						</p>
+						<Hash className='btn btn-primary' to='#contact-me' smooth={true}>
+							Contact Me
+						</Hash>
 					</div>
 				</div>
 			</div>

@@ -3,7 +3,7 @@ import TrustedBy from './TrustedBy';
 import EcommIntegration from './EcommIntegration';
 import StaticSites from './StaticSites';
 import RenderHelemt from '../RenderHelmet';
-
+import { HashLink as Hash } from 'react-router-hash-link';
 export const HomePage = () => (
 	<>
 		<RenderHelemt title='Home Page' path='/' />
@@ -30,6 +30,9 @@ export const HomePage = () => (
 					which are built to help scale and boost businesses'{' '}
 					<strong>online presence.</strong>
 				</p>
+				<Hash className='btn btn-primary' to='#contact-me' smooth={true}>
+					Contact Me
+				</Hash>
 			</div>
 		</div>
 
