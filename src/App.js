@@ -3,7 +3,6 @@ import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Header, HomePage, EcoommerceOptions, Footer } from './components';
 function App() {
-	console.log({ Router });
 	return (
 		<Router>
 			<Header />

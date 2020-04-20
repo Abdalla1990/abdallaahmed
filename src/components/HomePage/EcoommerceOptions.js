@@ -1,7 +1,10 @@
 import React from 'react';
+import RenderHelemt from '../RenderHelmet';
+
 export const EcoommerceOptions = () => {
 	return (
 		<div className='ecommerce-options'>
+			<RenderHelemt title='Ecoomerce Options Page' path='/ecoomerce-options' />
 			<h2 className='label title'>You Best Ecommerce Option</h2>
 			<div className='container'>
 				<div className='text-wrapper no-padding'>

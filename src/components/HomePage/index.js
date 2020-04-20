@@ -1,9 +1,11 @@
 import React from 'react';
 import TrustedBy from './TrustedBy';
 import EcommIntegration from './EcommIntegration';
+import RenderHelemt from '../RenderHelmet';
 
 export const HomePage = () => (
 	<>
+		<RenderHelemt title='Home Page' path='/' />
 		<div className='hero-banner-container'>
 			<div className='image-container'>
 				<div className='overlay-container'></div>
