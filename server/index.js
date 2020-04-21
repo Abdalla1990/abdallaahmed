@@ -10,12 +10,14 @@ const transporter = nodemailer.createTransport({
 		pass: pass
 	}
 });
-
+var cors = require('cors');
 const PORT = process.env.PORT || 3000;
 const path = require('path');
 
 const app = express();
 const bodyParser = require('body-parser');
+
+app.use(cors());
 app.use(bodyParser.json());
 app.post('/send', (req, res) => {
 	console.log('send', req.body);
