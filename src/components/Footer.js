@@ -9,7 +9,7 @@ export const Footer = () => {
 					<h2 className='form-label'>Lets Get In Touch</h2>
 					<span className='form-description'>
 						<p>
-							Have a question, Need a quick consultancy, or want to learn more ?
+							Have a question, Need a quick consultancy, or want to hire me ?
 						</p>
 					</span>
 					<MyForm />

@@ -2,10 +2,15 @@ import React from 'react';
 import RenderHelemt from '../RenderHelmet';
 import { HashLink as Hash } from 'react-router-hash-link';
 
-export const EcoommerceOptions = () => {
+export const EcoommerceOptions = ({ noHelmet = false }) => {
 	return (
 		<div className='ecommerce-options'>
-			<RenderHelemt title='Ecoomerce Options Page' path='/ecoomerce-options' />
+			{!noHelmet && (
+				<RenderHelemt
+					title='Ecoomerce Options Page'
+					path='/ecoomerce-options'
+				/>
+			)}
 			<h2 className='label title'>You Best Ecommerce Option</h2>
 			<div className='container'>
 				<div className='text-wrapper no-padding'>

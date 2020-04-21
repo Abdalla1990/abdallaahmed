@@ -26,7 +26,7 @@ const StaticSites = () => {
 								<strong>Building websites that Keep customers Engaged.</strong>{' '}
 								When someone visits your website, it’s important that they stay
 								engaged with a <strong>beautiful website design.</strong>{' '}
-								Otherwise, they leave and move onto the next one. We know you
+								Otherwise, they leave and move onto the next one. I know you
 								don’t want that. Web visitors are more likely to stay on a site
 								that is <strong>neatly designed.</strong>
 							</p>

@@ -2,10 +2,15 @@ import React from 'react';
 import RenderHelemt from '../RenderHelmet';
 import { HashLink as Hash } from 'react-router-hash-link';
 
-export const WebDevelopemnt = () => {
+export const WebDevelopemnt = ({ noHelmet = false }) => {
 	return (
 		<div className='web-development'>
-			<RenderHelemt title='Ecoomerce Options Page' path='/ecoomerce-options' />
+			{!noHelmet && (
+				<RenderHelemt
+					title='Ecoomerce Options Page'
+					path='/ecoomerce-options'
+				/>
+			)}
 			<h2 className='label title'>Web Design & Development</h2>
 			<div className='container'>
 				<div className='text-wrapper no-padding'>
@@ -19,7 +24,7 @@ export const WebDevelopemnt = () => {
 					<div className='text-container'>
 						<p>
 							Technologies used to build your site can vary based on many facts.
-							One important aspect though, is how scalable and easy-to-enhance a
+							One important aspect though, is how scalable and easy-to-expand a
 							website is. Building a website that is{' '}
 							<strong>tiled to your needs </strong> and leverages some powerful
 							tools that were created for exactly that purpose can make your{' '}
@@ -49,8 +54,8 @@ export const WebDevelopemnt = () => {
 						<p>
 							By leveraging these technologies, changing content no longer
 							requires code changes. It is easy to track events on your site to
-							increase conversion rates or implment some A/B testing to determin
-							your best business's moves.
+							increase conversion rates or implement some A/B testing to
+							determin your best business's moves.
 						</p>
 						<p>
 							*Note : we can adjust this stack to whatever works best for your

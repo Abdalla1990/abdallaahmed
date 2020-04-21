@@ -1,9 +1,24 @@
 import React, { useState } from 'react';
 import { useForm, useField } from 'react-form';
+import axios from 'axios';
 
 async function sendToFakeServer(values) {
-	await new Promise(resolve => setTimeout(resolve, 1000));
-	return 'Done';
+	console.log({ values });
+	const results = await axios
+		.post('/send', {
+			data: {
+				name: values.Name,
+				email: values.Email,
+				phone: values.Phone
+			}
+		})
+		.then(res => {
+			return 'Done';
+		})
+		.catch(err => {
+			return 'Sorry';
+		});
+	return results;
 }
 
 async function validateField(type, instance) {
@@ -42,14 +57,17 @@ function Field({ className, type, required = true }) {
 }
 
 const MyForm = function() {
-	const [status, setStatus] = useState(false);
+	const [status, setStatus] = useState(null);
 	const {
 		Form,
 		meta: { isSubmitting, canSubmit }
 	} = useForm({
 		onSubmit: async (values, instance) => {
 			await sendToFakeServer(values).then(res => {
-				res === 'Done' && setStatus(true);
+				res === 'Done' &&
+					setStatus('Thanks for your email, We will be in touch soon');
+				res === 'Sorry' &&
+					setStatus('Sorry Something went wrong! We are working on a fix!');
 			});
 		},
 		debugForm: false
@@ -57,9 +75,9 @@ const MyForm = function() {
 
 	return (
 		<Form className='my-form'>
-			{status ? (
+			{status !== null ? (
 				<div className='field-container'>
-					<em>{'Thanks for your email, We will be in touch soon'}</em>
+					<em>{status}</em>
 				</div>
 			) : (
 				<>
@@ -70,11 +88,7 @@ const MyForm = function() {
 						<Field type='Email' className='form-control' />
 					</div>
 					<div className='form-group field-container'>
-						<Field
-							type='Phone Number'
-							required={false}
-							className='form-control'
-						/>
+						<Field type='Phone' required={false} className='form-control' />
 					</div>
 					<div className='form-group'>
 						<button
