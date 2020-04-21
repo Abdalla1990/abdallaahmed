@@ -1,12 +1,7 @@
-import React, { useState, useCallback } from 'react';
-import Modal from '../Modal';
+import React from 'react';
 import { Link } from 'react-router-dom';
-const EcommerceIntegration = () => {
-	const [modalOpen, setModaslOpen] = useState(true);
-	// const handleOnClose = useCallback(() => {
-	// 	modalOpen && setModaslOpen(false);
-	// }, [modalOpen]);
 
+const EcommerceIntegration = () => {
 	return (
 		<>
 			<h2 className='label'>Ecommerce Integration</h2>
@@ -25,6 +20,7 @@ const EcommerceIntegration = () => {
 							<div className='image-container ecomm-brands react'></div>
 						</a>
 					</div>
+					<div className='image-container store'></div>
 					<div className='text-wrapper no-padding'>
 						<div className='text-container'>
 							<p>

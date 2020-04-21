@@ -4,17 +4,16 @@ import MyForm from './MyForm';
 export const Footer = () => {
 	return (
 		<>
-			<div className='footer'>
+			<div className='footer' id='contact-me'>
 				<div className='form-container'>
 					<h2 className='form-label'>Lets Get In Touch</h2>
 					<span className='form-description'>
 						<p>
-							Have a question, Need a quick consultancy, or want to learn more ?
+							Have a question, Need a quick consultancy, or want to hire me ?
 						</p>
 					</span>
 					<MyForm />
 				</div>
-				<div>Contact Information</div>
 			</div>
 			<div className='white-fotter'>
 				<p>© COPYRIGHT 2020 | Abdalla Ahmed | All Right Reserved</p>

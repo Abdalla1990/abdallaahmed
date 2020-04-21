@@ -8,6 +8,23 @@ import {
 	Footer,
 	WebDevelopemnt
 } from './components';
+export const ServerApp = ({ noHelmet }) => (
+	<>
+		<Header />
+		<Switch>
+			<Route path='/web-development'>
+				<WebDevelopemnt noHelmet={noHelmet} />
+			</Route>
+			<Route path='/ecommerce-options'>
+				<EcoommerceOptions noHelmet={noHelmet} />
+			</Route>
+			<Route path='/'>
+				<HomePage noHelmet={noHelmet} />
+			</Route>
+		</Switch>
+		<Footer />
+	</>
+);
 function App() {
 	return (
 		<Router>

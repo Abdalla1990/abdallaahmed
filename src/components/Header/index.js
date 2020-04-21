@@ -18,16 +18,15 @@ export const Header = () => {
 				<span>+1(236)-512-7117 </span>
 				<span>info@abdallaahmed.co</span>
 			</div>
+
 			<span className={logoClassnames}>
-				<h1> -- Abdalla Ahmed -- </h1>
+				<Link to='/'>
+					<h1> -- Abdalla Ahmed -- </h1>
+				</Link>
 			</span>
+
 			<nav className='header container'>
 				<ul className='header-container'>
-					<li>
-						<span>
-							<Link to='/'>HOME</Link>
-						</span>
-					</li>
 					<li>
 						<span>
 							<Link to='/ecommerce-options'>ECOMMERCE</Link>

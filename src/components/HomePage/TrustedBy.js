@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as Hash } from 'react-router-hash-link';
 export default () => (
 	<>
 		<h2 className='label'>TURSTED BY</h2>
@@ -150,6 +151,13 @@ export default () => (
 						</g>
 					</svg>
 				</a>
+			</div>
+			<div className='text-wrapper'>
+				<div className='text-container'>
+					<Hash className='btn btn-primary' to='#contact-me' smooth={true}>
+						Hire Me
+					</Hash>
+				</div>
 			</div>
 		</div>
 	</>
