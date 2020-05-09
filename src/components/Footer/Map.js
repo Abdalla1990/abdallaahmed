@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
-import { API } from "../../../server/mailKeys";
 const AnyReactComponent = ({ text }) => <div className='marker'></div>;
 
 class SimpleMap extends Component {
