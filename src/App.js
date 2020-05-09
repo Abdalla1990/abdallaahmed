@@ -4,20 +4,22 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {
 	Header,
 	HomePage,
-	EcoommerceOptions,
+	// EcoommerceOptions,
 	Footer,
-	WebDevelopemnt
+	// WebDevelopemnt,
+	ContactMe,
 } from './components';
+
 export const ServerApp = ({ noHelmet }) => (
 	<>
 		<Header />
 		<Switch>
-			<Route path='/web-development'>
+			{/* <Route path='/web-development'>
 				<WebDevelopemnt noHelmet={noHelmet} />
 			</Route>
 			<Route path='/ecommerce-options'>
 				<EcoommerceOptions noHelmet={noHelmet} />
-			</Route>
+			</Route> */}
 			<Route path='/'>
 				<HomePage noHelmet={noHelmet} />
 			</Route>
@@ -30,12 +32,15 @@ function App() {
 		<Router>
 			<Header />
 			<Switch>
-				<Route path='/web-development'>
+				<Route path='/contact-me'>
+					<ContactMe />
+				</Route>
+				{/* <Route path='/web-development'>
 					<WebDevelopemnt />
 				</Route>
 				<Route path='/ecommerce-options'>
 					<EcoommerceOptions />
-				</Route>
+				</Route> */}
 				<Route path='/'>
 					<HomePage />
 				</Route>

@@ -1,0 +1,12 @@
+.hero-banner-container > .contact-me {
+	background-image: url('./craft.jpeg');
+}
+@include media-breakpoint-down(sm) {
+	.hero-banner-container > .contact-me {
+		background-position: 67%;
+	}
+	.contact-me ~ .image-content > .content > h3 {
+		margin-top: 60px;
+		font-size: calc(1em + 2vw);
+	}
+}

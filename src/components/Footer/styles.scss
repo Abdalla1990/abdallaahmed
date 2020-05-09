@@ -1,0 +1,161 @@
+.footer {
+	background-color: $black;
+	color: $white;
+	border-top: solid 6px $header-background-color;
+	height: 400px;
+	display: flex;
+	@include media-breakpoint-down(sm) {
+		flex-direction: column;
+		height: 700px;
+	}
+	> div {
+		height: 100%;
+		width: 40%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include media-breakpoint-down(sm) {
+			width: 90%;
+		}
+		.form-description {
+			text-align: center;
+			font-size: calc(0.7em + 0.5vw);
+			width: 60%;
+			@include media-breakpoint-down(sm) {
+				width: 55%;
+			}
+			p {
+				line-height: 1.7;
+				margin: auto;
+			}
+		}
+
+		.form-label {
+			margin: auto;
+			font-size: calc(1em + 0.3vw);
+		}
+		.my-form {
+			margin: auto;
+			@include media-breakpoint-down(sm) {
+				width: 60%;
+			}
+			.btn {
+				font-size: calc(0.7em + 0.5vw);
+				width: 100%;
+			}
+		}
+		.my-form .field-container {
+			display: flex;
+			flex-direction: column;
+			font-family: 'Montserrat', sans-serif;
+			.form-control {
+				font-size: calc(0.5em + 0.4vw) !important;
+			}
+			em {
+				text-align: center;
+				font-size: calc(0.5em + 0.4vw) !important;
+			}
+		}
+	}
+
+	.about-the-business {
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+		font-size: calc(0.3em + 0.5vw);
+		font-weight: 600;
+		background-color: #f1f1f1;
+		padding: 20px;
+		color: black;
+
+		.map {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 90%;
+			p {
+				margin: auto;
+				padding-bottom: 30px;
+			}
+		}
+		> div {
+			width: 40%;
+			height: 50%;
+			margin: auto;
+			padding-right: 20px;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+
+			.footer-label {
+				span {
+					padding-bottom: 5px;
+				}
+			}
+			> div,
+			> span {
+				display: block;
+				// text-align: center;
+				> span {
+					display: block;
+				}
+			}
+			a {
+				> svg {
+					width: 35px;
+					height: 35px;
+				}
+
+				color: $black;
+				@include media-breakpoint-down(sm) {
+					color: $white;
+				}
+			}
+			@include media-breakpoint-down(sm) {
+				width: 80%;
+				margin: auto;
+				padding: 0;
+				height: 15%;
+				> span {
+					display: none;
+				}
+				> div {
+					width: 100%;
+					height: 80% !important;
+				}
+				.footer-label {
+					position: relative;
+					text-align: center;
+					span {
+						padding-bottom: 10px;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			flex-direction: column;
+			width: 80%;
+			font-size: calc(0.6em + 0.5vw);
+			background-color: initial;
+			padding: 20px;
+			padding-top: 0;
+			color: white;
+			.map {
+				height: 50%;
+			}
+		}
+	}
+}
+
+.white-fotter {
+	text-align: center;
+	font-size: calc(0.5em + 0.2vw);
+	height: 30px;
+	display: flex;
+
+	p {
+		margin: auto;
+	}
+}

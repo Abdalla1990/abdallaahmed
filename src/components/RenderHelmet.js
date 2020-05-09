@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const RenderHelemt = ({ title, path }) => {
+const RenderHelemt = ({ title, path, description }) => {
 	const canonicalLink =
 		path !== '/'
 			? `https://www.abdallaahmed.co${path}`
@@ -21,6 +21,7 @@ const RenderHelemt = ({ title, path }) => {
 			<meta charSet='utf-8' />
 			<title>{pageTitle}</title>
 			<link rel='canonical' href={canonicalLink} />
+			<meta name='description' content={description}></meta>
 		</Helmet>
 	);
 };

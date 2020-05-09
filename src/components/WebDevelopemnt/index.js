@@ -7,8 +7,9 @@ export const WebDevelopemnt = ({ noHelmet = false }) => {
 		<div className='web-development'>
 			{!noHelmet && (
 				<RenderHelemt
-					title='Ecoomerce Options Page'
-					path='/ecoomerce-options'
+					title='Web Development Page'
+					path='/web-development'
+					description='Web Design & Development - Have your prefessional Website built using top niech technologies locally in Burnaby/New Westminster. I help maintain scalability and performance of your store'
 				/>
 			)}
 			<h2 className='label title'>Web Design & Development</h2>
@@ -61,7 +62,7 @@ export const WebDevelopemnt = ({ noHelmet = false }) => {
 							*Note : we can adjust this stack to whatever works best for your
 							business.
 						</p>
-						<Hash className='btn btn-primary' to='#contact-me' smooth={true}>
+						<Hash className='btn btn-primary' to='/contact-me' smooth={true}>
 							Contact Me
 						</Hash>
 					</div>

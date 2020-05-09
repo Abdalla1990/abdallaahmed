@@ -8,7 +8,8 @@ export const EcoommerceOptions = ({ noHelmet = false }) => {
 			{!noHelmet && (
 				<RenderHelemt
 					title='Ecoomerce Options Page'
-					path='/ecoomerce-options'
+					path='/ecommerce-options'
+					description='Ecommerce development - Have your prefessional online shop (Ecommerce store) built locally in Burnaby/New Westminster using top niech technologies. I am dedicated to build powerful and easy to scale online stores'
 				/>
 			)}
 			<h2 className='label title'>You Best Ecommerce Option</h2>
@@ -73,7 +74,7 @@ export const EcoommerceOptions = ({ noHelmet = false }) => {
 							*Note : we can adjust this stack to whatever works best for your
 							business.
 						</p>
-						<Hash className='btn btn-primary' to='#contact-me' smooth={true}>
+						<Hash className='btn btn-primary' to='/contact-me' smooth={true}>
 							Contact Me
 						</Hash>
 					</div>

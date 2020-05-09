@@ -152,9 +152,9 @@ export default () => (
 					</svg>
 				</a>
 			</div>
-			<div className='text-wrapper'>
+			<div className='text-wrapper no-padding'>
 				<div className='text-container'>
-					<Hash className='btn btn-primary' to='#contact-me' smooth={true}>
+					<Hash className='btn btn-primary' to='/contact-me' smooth={true}>
 						Hire Me
 					</Hash>
 				</div>

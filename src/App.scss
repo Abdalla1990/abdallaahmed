@@ -6,11 +6,15 @@
 @import './classes.scss';
 
 body {
-	font-family: 'Michroma', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background-color: $background-color;
-	p,
-	button,
-	a {
-		font-family: 'Montserrat', sans-serif;
+	// p,
+	// button,
+	// a {
+	// 	font-family: 'Montserrat', sans-serif;
+	// }
+	.btn-primary.cta {
+		background-color: #064e9b !important;
+		border-color: white;
 	}
 }

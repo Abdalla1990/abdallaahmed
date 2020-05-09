@@ -14,10 +14,18 @@ export const HomePage = ({ noHelmet = false }) => (
 
 			<div className='image-content'>
 				<div className='content'>
-					<h3>
+					<h1 className='heading-title'>
 						<strong>Front-End </strong> Development &{' '}
 						<strong>E-commerce</strong> Stores Developer
-					</h3>
+					</h1>
+					<div className='button-container'>
+						<Hash
+							className='btn btn-primary cta'
+							to='/contact-me'
+							smooth={true}>
+							Hire Me
+						</Hash>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -25,19 +33,15 @@ export const HomePage = ({ noHelmet = false }) => (
 			<div className='text-container'>
 				<p>
 					Hi, I am <strong>Abdalla</strong>, a remote{' '}
-					<strong>independant web developer</strong> helping businesses build
-					better <strong>Web</strong> and <strong>Ecommerce experiance</strong>{' '}
-					By leveraging awesome tools which are built to help scale and boost
-					businesses' <strong>online presence.</strong>
+					<strong>independent web developer</strong> based in{' '}
+					<strong>Vancouver</strong>. I help businesses build better{' '}
+					<strong>Web</strong> and <strong>Ecommerce experience</strong>
 				</p>
-				<Hash className='btn btn-primary' to='#contact-me' smooth={true}>
-					Contact Me
-				</Hash>
 			</div>
 		</div>
 
 		<TrustedBy />
-		<StaticSites />
-		<EcommIntegration />
+		{/* <StaticSites />
+		<EcommIntegration /> */}
 	</>
 );

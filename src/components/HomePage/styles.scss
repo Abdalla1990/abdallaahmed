@@ -51,12 +51,23 @@
 		max-width: 40%;
 		margin: auto;
 
-		h3 {
+		.heading-title {
+			font-size: calc(1.7em + 0.5vw);
 			margin: 5.5rem auto;
 		}
 		.content {
 			width: 86%;
 			margin: auto;
+		}
+		.button-container {
+			width: 50%;
+			margin: auto;
+			a {
+				width: 100%;
+				border-color: white;
+				font-weight: 600;
+				font-size: calc(0.7em + 0.5vw);
+			}
 		}
 		@include media-breakpoint-down(sm) {
 			width: 100%;
@@ -65,7 +76,7 @@
 			margin: 0;
 			z-index: 100;
 			padding: 0;
-			h3 {
+			.heading-title {
 				margin-bottom: 3.5rem;
 			}
 			p {
@@ -103,7 +114,7 @@
 			background-color: $header-background-color;
 			color: $black;
 			border: 1px solid lighten($black, 50);
-			width: 30%;
+			width: 18%;
 			margin: 1.7rem auto;
 			@include media-breakpoint-down(sm) {
 				margin: 1rem auto;
@@ -194,74 +205,6 @@
 			}
 			padding: 93px;
 		}
-	}
-}
-
-.footer {
-	background-color: $black;
-	color: $white;
-	border-top: solid 6px $header-background-color;
-	height: 400px;
-
-	.form-container {
-		height: 100%;
-		width: 40%;
-		margin: auto;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		@include media-breakpoint-down(sm) {
-			width: 90%;
-		}
-		.form-description {
-			text-align: center;
-			font-size: calc(0.7em + 0.5vw);
-			width: 60%;
-			@include media-breakpoint-down(sm) {
-				width: 55%;
-			}
-			p {
-				line-height: 1.7;
-				margin: auto;
-			}
-		}
-
-		.form-label {
-			margin: auto;
-			font-size: calc(1em + 0.3vw);
-		}
-		.my-form {
-			margin: auto;
-			@include media-breakpoint-down(sm) {
-				width: 60%;
-			}
-			.btn {
-				font-size: calc(0.7em + 0.5vw);
-				width: 100%;
-			}
-		}
-		.my-form .field-container {
-			display: flex;
-			flex-direction: column;
-			.form-control {
-				font-size: calc(0.5em + 0.4vw) !important;
-			}
-			em {
-				text-align: center;
-				font-size: calc(0.5em + 0.4vw) !important;
-			}
-		}
-	}
-}
-
-.white-fotter {
-	text-align: center;
-	font-size: calc(0.5em + 0.2vw);
-	height: 30px;
-	display: flex;
-
-	p {
-		margin: auto;
 	}
 }
 

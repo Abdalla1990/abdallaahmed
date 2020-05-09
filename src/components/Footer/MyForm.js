@@ -9,13 +9,13 @@ async function sendToFakeServer(values) {
 			data: {
 				name: values.Name,
 				email: values.Email,
-				phone: values.Phone
-			}
+				phone: values.Phone,
+			},
 		})
-		.then(res => {
+		.then((res) => {
 			return 'Done';
 		})
-		.catch(err => {
+		.catch((err) => {
 			return 'Sorry';
 		});
 	return results;
@@ -27,7 +27,7 @@ async function validateField(type, instance) {
 	}
 
 	return instance.debounce(async () => {
-		await new Promise(resolve => setTimeout(resolve, 1000));
+		await new Promise((resolve) => setTimeout(resolve, 1000));
 		return false;
 	}, 500);
 }
@@ -35,9 +35,9 @@ async function validateField(type, instance) {
 function Field({ className, type, required = true }) {
 	const {
 		meta: { error, isTouched, isValidating },
-		getInputProps
+		getInputProps,
 	} = useField(type, {
-		validate: required && validateField
+		validate: required && validateField,
 	});
 
 	return (
@@ -60,17 +60,17 @@ const MyForm = function() {
 	const [status, setStatus] = useState(null);
 	const {
 		Form,
-		meta: { isSubmitting, canSubmit }
+		meta: { isSubmitting, canSubmit },
 	} = useForm({
 		onSubmit: async (values, instance) => {
-			await sendToFakeServer(values).then(res => {
+			await sendToFakeServer(values).then((res) => {
 				res === 'Done' &&
 					setStatus('Thanks for your email, We will be in touch soon');
 				res === 'Sorry' &&
 					setStatus('Sorry Something went wrong! We are working on a fix!');
 			});
 		},
-		debugForm: false
+		debugForm: false,
 	});
 
 	return (
@@ -92,7 +92,7 @@ const MyForm = function() {
 					</div>
 					<div className='form-group'>
 						<button
-							className='btn btn-primary'
+							className='btn btn-primary cta'
 							type='submit'
 							disabled={!canSubmit}>
 							Contact Me!
