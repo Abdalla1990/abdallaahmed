@@ -24,7 +24,7 @@
 		"google-map-react": "^1.1.7",
 		"ignore-styles": "^5.0.1",
 		"node-sass": "^4.14.0",
-		"nodemailer": "^6.4.6",
+		"nodemailer": "^6.4.16",
 		"react": "^16.12.0",
 		"react-dom": "^16.12.0",
 		"react-form": "^4.0.1",
