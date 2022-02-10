@@ -23,7 +23,7 @@
 		"express": "^4.17.1",
 		"google-map-react": "^1.1.7",
 		"ignore-styles": "^5.0.1",
-		"node-sass": "^4.14.0",
+		"node-sass": "^7.0.0",
 		"nodemailer": "^6.4.6",
 		"react": "^16.12.0",
 		"react-dom": "^16.12.0",
