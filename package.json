@@ -32,7 +32,7 @@
 		"react-router-dom": "^5.1.2",
 		"react-router-hash-link": "^1.2.2",
 		"react-router-sitemap": "^1.2.0",
-		"react-scripts": "3.4.0"
+		"react-scripts": "5.0.1"
 	},
 	"scripts": {
 		"front-end": "react-scripts start",
